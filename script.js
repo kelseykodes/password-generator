@@ -8,10 +8,11 @@ var generateBtn = document.querySelector("#generate");
   //  var password = "";
   // for (var i = 0; i <= generateBtn; i++){
       //password = password + passwordValues.charCode(Math.floor(Math.random() * Math.floor(passwordValues.length - 1)));
-  //}
+  // }
+  //document.getElementById("display").value = password;
+      //}
 
-
-  function promptThis(){
+  function generatePassword(){
       //uppercase letters
       var upperCase = prompt("Enter two uppercase letters from A-Z ");
       //lowercase letters 
@@ -23,6 +24,14 @@ var generateBtn = document.querySelector("#generate");
       //password length
       var passLength = prompt("How long would you like your password to be? (Enter a number between 8-128 ");
   }
+  if (passLength < 8) {
+    window.alert('Password must contain between 8 - 129 characters')
+    return;
+}
+  if (passLength > 128) {
+    window.alert("Password must contain a maximum of 129 characters");
+    return;
+}
 
 // Write password to the #password input
 function writePassword() {
@@ -34,3 +43,8 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword) 
+
+//  if (passLength < 8) || (passLength > 128){
+  //window.alert('Password must contain between 8 - 129 characters')
+ // return null;
+
