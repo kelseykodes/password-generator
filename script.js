@@ -1,6 +1,16 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
- function generatePassword() {
+
+
+ //function generatePassword() {
+   // var generateBtn = document.querySelector("#generate");
+  //  const passwordValues = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+  //  var password = "";
+  // for (var i = 0; i <= generateBtn; i++){
+      //password = password + passwordValues.charCode(Math.floor(Math.random() * Math.floor(passwordValues.length - 1)));
+  //}
+
+
   function promptThis(){
       //uppercase letters
       var upperCase = prompt("Enter two uppercase letters from A-Z ");
@@ -11,9 +21,8 @@ var generateBtn = document.querySelector("#generate");
       //numbers
       var numbers = prompt("Enter two numbers between 0-9 ");
       //password length
-      //var passLength = prompt("How long would you like your password to be? (Enter a number between 8-128 ");
+      var passLength = prompt("How long would you like your password to be? (Enter a number between 8-128 ");
   }
-}
 
 // Write password to the #password input
 function writePassword() {
